@@ -1,13 +1,13 @@
 # Calculator App with HyBid SDK Integration
 Android calculator app integrated with HyBid SDK for displaying banner and interstitial advertisements.
-Features
+
+## Features
 
  - Basic calculator operations (+, -, ×, ÷)
  - HyBid Banner Ad integration
  - HyBid Interstitial Ad (shows after calculations)
  - Portrait orientation optimized
 
-Screenshots
 The app includes:
 
 Banner Ad - Displayed at the top of the calculator
@@ -59,20 +59,6 @@ Open in Android Studio
 Sync project with Gradle files
 Build and run on your device/emulator
 
-Project Structure
-
-app/
-├── src/main/
-│   ├── java/com/example/calculator-hybid/
-│   │   └── MainActivity.kt              # Main app logic and HyBid integration
-│   ├── res/
-│   │   ├── layout/
-│   │   │   └── activity_main.xml        # UI layout with calculator and ads
-│   │   ├── values/
-│   │   │   ├── styles.xml               # App themes and button styles
-│   │   │   └── strings.xml              # String resources
-│   │   └── AndroidManifest.xml          # App permissions and activities
-│   └── build.gradle    
 
 
 // HyBid SDK
