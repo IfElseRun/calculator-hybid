@@ -40,7 +40,9 @@ Setup Instructions
 2. Configuration
 
 ```
+Open `app/src/main/res/values/strings.xml`.
 
+Replace with your actual HyBid credentials hybid_api_key
 
 In the Kotlin code, these values are automatically read using:
 
