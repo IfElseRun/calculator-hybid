@@ -139,16 +139,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             "1",
             object : HyBidInterstitialAd.Listener {
                 override fun onInterstitialLoaded() {
-                    Logger.e("HyBid", "✅ Interstitial ad loaded successfully!")
+                    Logger.e("HyBid", "Interstitial ad loaded successfully!")
                 }
 
                 override fun onInterstitialLoadFailed(error: Throwable?) {
-                    Logger.e("HyBid", "❌ Interstitial ad FAILED to load: ${error?.message}")
+                    Logger.e("HyBid", "Interstitial ad FAILED to load: ${error?.message}")
                     handler.postDelayed({ loadInterstitialAd() }, 2000)
                 }
 
                 override fun onInterstitialImpression() {
-                    Logger.e("HyBid", "📊 Interstitial ad impression")
+                    Logger.e("HyBid", "Interstitial ad impression")
                 }
 
                 override fun onInterstitialDismissed() {
@@ -167,7 +167,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         interstitialAd?.setMediation(true);
         val testInterstitialAd = TestUtil.createTestInterstitialAd()
         interstitialAd?.prepareAd(testInterstitialAd)
-        Logger.e("HyBid", "✅ interstitialAd.load() called")
+        Logger.e("HyBid", "interstitialAd.load() called")
     }
 
 
