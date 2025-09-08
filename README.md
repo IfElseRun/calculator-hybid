@@ -10,42 +10,36 @@ Android calculator app integrated with HyBid SDK for displaying banner and inter
 
 The app includes:
 
-Banner Ad - Displayed at the top of the calculator
-Calculator Interface - Clean, modern design with number pad
-Interstitial Ad - Full-screen ad shown after completing calculations
+- Banner Ad - Displayed at the top of the calculator
+- Calculator Interface - Clean, modern design with number pad
+- Interstitial Ad - Full-screen ad shown after completing calculations - this is not fully finished
 
 ![banner-ad-preview.png](banner-ad-preview.png)
 
 HyBid SDK Integration
 Banner Ads
 
-Loaded automatically when the app starts
-Displayed at the top of the calculator interface
-Uses HyBidAdView component
+- Loaded automatically when the app starts
+- Displayed at the top of the calculator interface
+- Uses HyBidAdView component
 
 Interstitial Ads
 
-Triggered after each calculation (when equals button is pressed)
-Full-screen ad experience
-Automatically reloads for subsequent calculations
+- Triggered after each calculation (when equals button is pressed)
+- Full-screen ad experience
+- Automatically reloads for subsequent calculations
 
 Setup Instructions
 
 1. Prerequisites
 
-Android Studio
-Android SDK 21+ (Android 5.0+)
-Valid HyBid account with app token and zone IDs
+- Android Studio
+- Android SDK 21+ (Android 5.0+)
+- Valid HyBid account with app token and zone IDs
 
 2. Configuration
 
-Open app/src/main/res/values/strings.xml.
-
-Add the following placeholders (replace with your actual HyBid credentials):
-
-<resources>
-    <string name="hybid_app_token">YOUR_APP_TOKEN_HERE</string>
-</resources>
+```
 
 
 In the Kotlin code, these values are automatically read using:
